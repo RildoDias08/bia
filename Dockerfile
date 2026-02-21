@@ -25,5 +25,4 @@ RUN cd client && npm prune --production && rm -rf node_modules/.cache
 
 EXPOSE 8080
 
-RUN chmod +x /usr/src/app/start.sh
-CMD ["/usr/src/app/start.sh"]
+CMD ["npm", "start"]
