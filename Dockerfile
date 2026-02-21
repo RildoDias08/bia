@@ -25,11 +25,4 @@ RUN cd client && npm prune --production && rm -rf node_modules/.cache
 
 EXPOSE 8080
 
-# Garanta que o arquivo foi copiado (você já tinha isso na linha 29)
-COPY start.sh /usr/src/app/start.sh
-
-# Garanta a permissão de execução
-RUN chmod +x /usr/src/app/start.sh
-
-# A mágica acontece aqui: mude de ["npm", "start"] para:
-ENTRYPOINT ["/usr/src/app/start.sh"]
+CMD ["npm", "start"]
