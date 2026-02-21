@@ -30,7 +30,7 @@ services:
     environment:
       - "POSTGRES_USER=postgres"
       - "POSTGRES_PASSWORD=postgres"
-      - "POSTGRES_DB=bia"
+      - "POSTGRES_DB=biaa"
     ports:
       - 5433:5432
     volumes:
